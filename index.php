@@ -230,15 +230,15 @@ class OpCacheService
 $opcache = OpCacheService::init($options);
 
 ?>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>OPcache statistics on <?php echo $opcache->getData('version', 'host'); ?></title>
-    <script src="//cdn.jsdelivr.net/react/15.0.1/react.min.js"></script>
-    <script src="//cdn.jsdelivr.net/react/15.0.1/react-dom.min.js"></script>
-    <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="//cdn.jsdelivr.net/react/15.4.2/react.min.js"></script>
+    <script src="//cdn.jsdelivr.net/react/15.4.2/react-dom.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
     <style type="text/css">
         body { font-family:sans-serif; font-size:90%; padding: 0; margin: 0 }
         nav { padding-top: 20px; }
@@ -247,7 +247,7 @@ $opcache = OpCacheService::init($options);
         nav > ul > li > a { display: block; margin: 0 10px; padding: 15px 30px; border: 1px solid transparent; border-bottom-color: #ccc; text-decoration: none; }
         nav > ul > li > a:hover { background-color: #f4f4f4; text-decoration: underline; }
         nav > ul > li > a.active:hover { background-color: initial; }
-        nav > ul > li > a[data-for].active { border: 1px solid #ccc; border-bottom-color: #ffffff; border-top: 3px solid #6ca6ef; }
+        nav > ul > li > a[data-for].active { border: 1px solid #ccc; border-bottom-color: #fff; border-top: 3px solid #6ca6ef; }
         table { margin: 0 0 1em 0; border-collapse: collapse; border-color: #fff; width: 100%; table-layout: fixed; }
         table caption { text-align: left; font-size: 1.5em; }
         table tr { background-color: #99D0DF; border-color: #fff; }
